@@ -1,5 +1,5 @@
-import { DynamicModule, Module } from "@nestjs/common";
-import { RandomNumberService } from "./random-number.service";
+import { DynamicModule, Module } from '@nestjs/common';
+import { RandomNumberService } from './random-number.service';
 
 @Module({})
 export class RandomNumberModule {
