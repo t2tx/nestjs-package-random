@@ -1,5 +1,5 @@
 {
-  "name": "nestjs-package-random",
+  "name": "@t2tx/nestjs-package-random",
   "version": "1.0.0",
   "description": "nestjs wrapper of mersenne-twister",
   "main": "dist/index.js",
