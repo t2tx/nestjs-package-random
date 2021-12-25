@@ -32,10 +32,6 @@ See [Changelog](CHANGELOG.md) for more information.
 
 Contributions welcome! See [Contributing](CONTRIBUTING.md).
 
-## Author
-
-**John Biundo (Y Prospect on [Discord](https://discord.gg/G7Qnnhy))**
-
 ## License
 
 Licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
