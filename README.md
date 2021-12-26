@@ -14,14 +14,50 @@
   </a>
 </div>
 
-### Installation
+## Installation
 
-1. Clone the repo
-2. Run npm/yarn install
+### yarn
 
 ```bash
-cd nestjs-package-random
-yarn
+yarn add @t2tx/nestjs-package-random
+```
+
+### npm
+
+```bash
+npm i @t2tx/nestjs-package-random
+```
+
+## Usage
+
+### `app.module.ts`
+
+```typescript
+import { Module } from '@nestjs/common';
+import { AppController } from './app.controller';
+import { RandomNumberModule } from 'nestjs-package-random';
+
+@Module({
+  imports: [RandomNumberModule.forRoot()],
+  controllers: [AppController],
+})
+export class AppModule {}
+```
+
+### `app.controller.ts`
+
+```typescript
+import { Controller, Get } from '@nestjs/common';
+import { RandomNumberService } from 'nestjs-package-random';
+
+@Controller()
+export class AppController {
+  constructor(private readonly random: RandomNumberService) {}
+  @Get()
+  getHello(): string {
+    return `Hello! ${this.random.generate()}`;
+  }
+}
 ```
 
 ## Change Log
