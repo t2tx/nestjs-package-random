@@ -35,7 +35,7 @@ npm i @t2tx/nestjs-package-random
 ```typescript
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
-import { RandomNumberModule } from 'nestjs-package-random';
+import { RandomNumberModule } from '@t2tx/nestjs-package-random';
 
 @Module({
   imports: [RandomNumberModule.forRoot()],
@@ -48,7 +48,7 @@ export class AppModule {}
 
 ```typescript
 import { Controller, Get } from '@nestjs/common';
-import { RandomNumberService } from 'nestjs-package-random';
+import { RandomNumberService } from '@t2tx/nestjs-package-random';
 
 @Controller()
 export class AppController {
